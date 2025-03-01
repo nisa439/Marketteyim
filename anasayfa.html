@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARKETTEYİM</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1abc9c, #3498db); /* Yeşil-mavi arka plan renk geçişi */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .form-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            color: white;
+            background-color: #3498db; /* Mavi buton rengi */
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2980b9; /* Hover için koyu mavi */
+        }
+
+        .btn-register {
+            background-color: #9b59b6; /* Kayıt butonu için mor tonunda renk */
+            margin-top: 20px;
+        }
+
+        .btn-register:hover {
+            background-color: #8e44ad; /* Hover için daha koyu mor */
+        }
+
+        .back-btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-btn a {
+            color: #3498db;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .back-btn a:hover {
+            color: #2980b9; /* Hover için koyu mavi */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="form-title">MARKETTEYİM</div>
+        <a href="müşteri.html">
+            <button class="btn">Müşteri Girişi</button>
+        </a>
+        <a href="misafir.html">
+            <button class="btn">Misafir Girişi</button>
+        </a>
+        <a href="satıcı.html">
+            <button class="btn">Satıcı Girişi</button>
+        </a>
+        <a href="kayit.html">
+            <button class="btn btn-register">Kayıt Oluştur</button>
+        </a>
+    </div>
+
+    <div class="back-btn">
+        <a href="anasayfa.html">Ana Sayfaya Dön</a>
+    </div>
+
+</body>
+</html>

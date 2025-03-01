@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Müşteri Girişi - MARKETTEYİM</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1abc9c, #3498db); /* Yeşil-mavi arka plan renk geçişi */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+            color: #333;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus, input[type="password"]:focus {
+            outline: none;
+            border-color: #3498db; /* Mavi renk seçeneği */
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            color: white;
+            background-color: #1abc9c; /* Yeşil buton rengi */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-submit:hover {
+            background-color: #16a085; /* Hover için koyu yeşil */
+        }
+
+        .back-btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-btn a {
+            color: #3498db;
+            text-decoration: none;
+            font-size: 16px;
+            transition: color 0.3s ease;
+        }
+
+        .back-btn a:hover {
+            color: #2980b9; /* Hover için koyu mavi */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="form-title">Müşteri Girişi</div>
+        <form action="#" method="POST">
+            <label for="username">Müşteri Adı:</label>
+            <input type="text" id="username" name="username" placeholder="Müşteri Adı" required>
+
+            <label for="password">Şifre:</label>
+            <input type="password" id="password" name="password" placeholder="Şifre" required>
+
+            <button type="submit" class="btn-submit">Giriş Yap</button>
+        </form>
+        <div class="back-btn">
+            <a href="anasayfa.html">Ana Sayfaya Dön</a>
+        </div>
+    </div>
+
+</body>
+</html>

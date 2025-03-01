@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol - MARKETTEYİM</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #3498db, #9b59b6); /* Mavi-mor arka plan renk geçişi */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            animation: backgroundEffect 10s infinite alternate; /* Arka plan için animasyon */
+        }
+
+        @keyframes backgroundEffect {
+            0% {
+                background: linear-gradient(135deg, #3498db, #9b59b6);
+            }
+            50% {
+                background: linear-gradient(135deg, #8e44ad, #2980b9);
+            }
+            100% {
+                background: linear-gradient(135deg, #3498db, #9b59b6);
+            }
+        }
+
+        .form-container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .form-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            color: white;
+            background-color: #3498db;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        .back-btn {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .back-btn a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px;
+            background-color: #2c3e50;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-btn a:hover {
+            background-color: #34495e;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="form-title">Kayıt Ol</div>
+
+        <!-- Müşteri Kaydı -->
+        <a href="müşteri_kayit.html">
+            <button class="btn">Müşteri Kaydı</button>
+        </a>
+
+        <!-- Satıcı Kaydı -->
+        <a href="satıcı_kayıt.html">
+            <button class="btn">Satıcı Kaydı</button>
+        </a>
+
+    </div>
+
+    <div class="back-btn">
+        <a href="anasayfa.html">Ana Sayfaya Dön</a>
+    </div>
+
+</body>
+</html>
